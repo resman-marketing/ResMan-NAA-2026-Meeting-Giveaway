@@ -70,8 +70,8 @@ a{color:var(--blue);text-decoration:none}
 .btn-outline svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
 
 /* booking band */
-.book-card{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:linear-gradient(135deg,#eef9fe,#fff);border:1px solid var(--g-mid);border-left:5px solid var(--blue);border-radius:18px;padding:26px 30px;box-shadow:var(--shadow-card);margin-top:24px}
-@media(max-width:680px){.book-card{grid-template-columns:1fr;gap:16px}}
+.book-card{display:grid;grid-template-columns:auto minmax(0,600px);justify-content:center;gap:24px;align-items:center;background:linear-gradient(135deg,#eef9fe,#fff);border:1px solid var(--g-mid);border-left:5px solid var(--blue);border-radius:18px;padding:26px 30px;box-shadow:var(--shadow-card);margin-top:24px}
+@media(max-width:680px){.book-card{grid-template-columns:1fr;justify-content:stretch;gap:16px}}
 .book-ico{width:60px;height:60px;border-radius:15px;background:linear-gradient(150deg,var(--blue),#0681b3);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 .book-ico svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .book-body p{font-size:14.5px;max-width:66ch}.book-body p b{color:var(--navy)}
