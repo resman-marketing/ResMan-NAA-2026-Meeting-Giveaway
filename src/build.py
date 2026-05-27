@@ -77,8 +77,8 @@ a{color:var(--blue);text-decoration:none}
 .book-body p{font-size:14.5px;max-width:66ch}.book-body p b{color:var(--navy)}
 .book-body .linkrow{margin-top:15px}
 
-/* device note — lightweight inline indicator (no box) */
-.device-note{display:inline-flex;align-items:center;gap:8px;margin-top:9px;font-size:11.5px;color:#9fb3c7;letter-spacing:.02em}
+/* device note — quiet inline caption beside the link buttons */
+.device-note{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;color:#9fb3c7;letter-spacing:.02em;white-space:nowrap}
 .device-note svg{width:14px;height:14px;stroke:#7f9fc0;fill:none;stroke-width:2}
 
 /* top bar */
@@ -460,8 +460,7 @@ footer a{color:#9fd9f2}
             <span class="linkbox" id="linkText">sendo.so/g/9zKd18FMx8d1GQ</span>
             <button class="btn btn-orange copybtn" id="copyBtn" data-link="__PARTY_LINK__"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy Link</button>
             <a class="btn btn-ghost" href="__PARTY_LINK__" target="_blank" rel="noopener">Open Link <span class="arr">&rarr;</span></a>
-          </div>
-          <div class="device-note"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Opens on phones, tablets &amp; laptops</div>
+            <span class="device-note"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Desktop &amp; mobile</span>
         </div>
       </div>
     </div>
