@@ -77,12 +77,9 @@ a{color:var(--blue);text-decoration:none}
 .book-body p{font-size:14.5px;max-width:66ch}.book-body p b{color:var(--navy)}
 .book-body .linkrow{margin-top:15px}
 
-/* device chip */
-.device-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
-  border-radius:var(--cta-radius);padding:7px 15px;font-size:12px;font-weight:600;color:#dfe6f0;letter-spacing:.03em}
-.device-chip svg{width:15px;height:15px;stroke:#9fd9f2;fill:none;stroke-width:2}
-.device-chip.light{background:#fff;border-color:var(--g-mid);color:var(--navy)}
-.device-chip.light svg{stroke:var(--blue)}
+/* device note — lightweight inline indicator (no box) */
+.device-note{display:inline-flex;align-items:center;gap:8px;margin-top:9px;font-size:11.5px;color:#9fb3c7;letter-spacing:.02em}
+.device-note svg{width:14px;height:14px;stroke:#7f9fc0;fill:none;stroke-width:2}
 
 /* top bar */
 .topbar{position:sticky;top:0;z-index:50;background:rgba(33,42,64,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
@@ -91,7 +88,9 @@ a{color:var(--blue);text-decoration:none}
 .nav-right{display:flex;align-items:center;gap:16px}
 .nav-right a{color:#cfd6df;font-size:13px;font-weight:500}
 .nav-right a:hover{color:#fff}
-.booth-chip{background:var(--orange);color:#fff;font-weight:700;font-size:11.5px;letter-spacing:.07em;padding:6px 13px;border-radius:var(--cta-radius);text-transform:uppercase}
+.booth-chip{background:var(--orange);color:#fff;font-weight:700;font-size:11.5px;letter-spacing:.07em;padding:6px 13px;border-radius:var(--cta-radius);text-transform:uppercase;transition:.2s}
+.nav-right .booth-chip{color:#fff}
+.nav-right .booth-chip:hover{background:#e64600;box-shadow:0 4px 14px rgba(255,78,0,.4)}
 @media(max-width:760px){.nav-right .nlink{display:none}}
 
 /* ---------- HERO ---------- */
@@ -283,7 +282,7 @@ footer a{color:#9fd9f2}
       <a class="nlink" href="#why">Why it works</a>
       <a class="nlink" href="#qualify">What qualifies</a>
       <a class="nlink" href="#qr">Get the link</a>
-      <span class="booth-chip">Booth 2801</span>
+      <a class="booth-chip" href="__LANDING__" target="_blank" rel="noopener">Booth 2801</a>
     </div>
   </div>
 </div>
@@ -456,13 +455,13 @@ footer a{color:#9fd9f2}
         <div class="qr-copy">
           <div class="section-jazz" style="color:var(--gold)">&#9834; Your Party Link</div>
           <h2>Scan it, save it, <strong>share it.</strong></h2>
-          <p>The one link you need at Booth 2801 &mdash; scan the QR or send it directly. Same Party Link either way, and it <b style="color:#fff">works on desktop and mobile.</b></p>
+          <p>The one link you need at Booth 2801 &mdash; scan the QR or send it directly. Same Party Link either way.</p>
           <div class="linkrow">
             <span class="linkbox" id="linkText">sendo.so/g/9zKd18FMx8d1GQ</span>
             <button class="btn btn-orange copybtn" id="copyBtn" data-link="__PARTY_LINK__"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy Link</button>
             <a class="btn btn-ghost" href="__PARTY_LINK__" target="_blank" rel="noopener">Open Link <span class="arr">&rarr;</span></a>
           </div>
-          <div class="device-chip" style="margin-top:14px"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> Opens on phones, tablets &amp; laptops</div>
+          <div class="device-note"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Opens on phones, tablets &amp; laptops</div>
         </div>
       </div>
     </div>
