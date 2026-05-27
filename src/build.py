@@ -311,7 +311,7 @@ footer a{color:#9fd9f2}
         <div class="event-meta">
           <div class="m"><b>June 17&ndash;19</b><span>Show Dates</span></div>
           <div class="m"><b>New Orleans</b><span>Apartmentalize 2026</span></div>
-          <div class="m"><b>Booth 2801</b><span>Aisle 2800</span></div>
+          <div class="m"><b>Booth 2801</b><span>Morial Convention Center</span></div>
           <div class="m"><b>AirPods 4</b><span>The Reward</span></div>
         </div>
       </div>
